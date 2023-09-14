@@ -8,6 +8,8 @@ import java.util.Map;
 
 public class Student {
 
+    public static double needed_to_pass;
+
     public Student(String[] data) {
         String[] HEADER = CASFormat.getCASHeader();
         if (data.length != HEADER.length) {
@@ -33,7 +35,7 @@ public class Student {
 
     public String getGrade() {
         if (Double.parseDouble(totalPoints.replaceAll(",", "."))
-                >= 63.0) return "bestanden";
+                >= needed_to_pass) return "bestanden";
         return "nicht bestanden";
     }
 

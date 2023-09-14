@@ -1,6 +1,8 @@
 package a2c;
 
 import a2c.Util.CSVUtil;
+import a2c.model.Student;
+
 import java.io.File;
 
 public class Main {
@@ -19,6 +21,9 @@ public class Main {
         final String OUTPUT_FILE_PATH = "/path/where/output/should/be/placed";
 
         final String CAS_PREABMLE = "COPY FIRST LINE FROM CAS EXPORT (changes every year, identifies exam)";
+
+        //points that are needed to pass the course:
+        Student.needed_to_pass = 63.0;
 
         new CSVUtil().startConvertion(
                 new File(ARTEMIS_FILE_PATH),
