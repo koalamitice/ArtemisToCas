@@ -14,7 +14,7 @@ public class ArtemisFormat {
      * might change each semester, please update
      * LAST UPDATE: SS23
      */
-    public static final int INDEX_TOTALPOINTS = 50;
+    public static final int INDEX_TOTALPOINTS = 44;
     public static final int INDEX_MAIL = 2;
 
 }

@@ -40,7 +40,7 @@ public class CSVUtil {
     }
 
     private static List<Student> parseCASImport(File file) throws IOException {
-        List<Student> students = new ArrayList<Student>();
+        List<Student> students = new ArrayList<>();
         CSVFormat format = CASFormat.getCASFormat();
 
         Reader inputReader = new FileReader(file);
